@@ -41,6 +41,7 @@
 - RAID-ED register.
 - Gate 1 decision pack.
 - Draft Level 1 milestone outline после одобрения.
+- Architecture note: контекстные Activities и sovereign control desk.
 
 ### Вне scope / non-goals
 
@@ -95,7 +96,8 @@
 | Risk | Scope pilot может преждевременно расшириться до implementation | Владелец repository | Yellow | Сохранять явную границу вне scope |
 | Dependency | Review владельца и Gate 1 decision | Владелец repository | Yellow | Рассмотреть decision pack |
 | Evidence gap | Пока нет evidence о нужных полях control desk | Владелец repository | Yellow | Зафиксировать feedback при review |
-| Decision | Утвердить framing pilot и Level 1 planning | Владелец repository | Yellow | Принять решение на Gate 1 |
+| Decision | Утвердить framing pilot, принять Activity-модель как future design principle и разрешить только Level 1 Markdown-only planning | Владелец repository | Yellow | Принять решение в обновлённом Gate 1 pack |
+| Assumption | Контекстные Activities сделают workflow понятнее и безопаснее | Владелец repository | Yellow | Проверить в ходе Gate 1 review |
 
 ## 9. Открытые вопросы и решения
 
@@ -108,15 +110,13 @@
 ## 10. Gate request
 
 - **Текущий Gate:** Gate 1 — Формирование
-- **Запрашиваемое решение:** Утвердить Draft Baseline 0 и разрешить подготовку
-  Level 1 Markdown-only delivery outline.
-- **Рекомендация:** Утвердить при условиях: pilot остаётся Green-only,
-  local-first, без API integration и implementation.
+- **Запрашиваемое решение:** Утвердить Draft Baseline 0 с дополнением:
+  контекстная Activity-модель принимается как future design principle; разрешить подготовку только Level 1 Markdown-only delivery outline.
+- **Рекомендация:** Утвердить при условиях: pilot остаётся Green-only и Markdown-only; Activity-модель принимается только как future design principle; не создаются UI, API integration, MCP, cloud, automation, deployment или owner profile.
 - **Evidence для рекомендации:** Rules, Skill и templates уже закоммичены;
   предлагаемый pilot использует только synthetic Markdown artifacts.
 - **Риски одобрения:** Небольшой риск scope drift в сторону implementation.
 - **Риски задержки или отклонения:** Отсутствует проверка governance workflow
   до возможной интеграции модели.
 - **Требуется approval от:** Владелец repository
-- **Действие после approval:** Создать компактный Level 1 milestone outline
-  и обновить RAID-ED register.
+- **Действие после approval:** Создать только компактный Level 1 Markdown-only milestone outline, обновить RAID-ED register и собрать owner feedback.
